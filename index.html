@@ -1,0 +1,250 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music pro</title>
+    <link rel="shortcut icon" href="music.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="alert">
+      <div class="alert alert-danger" role="alert">
+        please open in desktop mode ..mobile version is under development.
+      </div>
+    </div>
+    <div id="wrapper">
+      <!-- side bar  -->
+      <div class="leftside">
+        <ul class="nav sidebar">
+          <a href="#" style="text-align: center"
+            ><img class="nav__profile" src="assets/images/profile.jpg" alt=""
+          /></a>
+          <h6 style="text-align: center; margin-top: 15px">Sagar Sonawane</h6>
+          <p style="text-align: center; font-size: 12px; margin-bottom: 50px">
+            ssonawane511@gmail.com
+          </p>
+
+          <li class="nav__menuList">
+            <a href="#"
+              ><img src="assets/images/logos/dashboard.png" alt=""
+            /></a>
+            <span class="">Home</span>
+          </li>
+          <li class="nav__menuList">
+            <a href="#"
+              ><img src="assets/images/logos/allcourse.png" alt="" />
+            </a>
+            <span class="nav__menuList__active">Browse</span>
+          </li>
+          <li class="nav__menuList">
+            <a href="#"><img src="assets/images/logos/files.png" alt="" /></a>
+            <span>Liked</span>
+          </li>
+          <li class="nav__menuList">
+            <a href="#"><img src="assets/images/logos/profile.png" alt="" /></a>
+            <span>Artist</span>
+          </li>
+
+          <li class="nav__menuList">
+            <a href="#"
+              ><img src="assets/images/logos/settings.png" alt=""
+            /></a>
+            <span>Settings</span>
+          </li>
+
+          <div class="nav__footer">
+            <p>
+              Upgrade to for <br />
+              more resources
+            </p>
+            <button class="nav__btn" style="margin: 0px 0px">Upgrade</button>
+          </div>
+        </ul>
+      </div>
+
+      <!-- main div container -->
+      <div id="content-wrapper">
+        <!-- content header  -->
+        <div class="header">
+          <!-- input search feild -->
+
+          <div class="input-group">
+            <div class="input-group-append">
+              <button class="btn" type="button" style="">
+                <i class="fa fa-search fa-sm" style="font-size: 15px"></i>
+              </button>
+            </div>
+            <input
+              type="text"
+              class="content__input"
+              placeholder="Search for..."
+              aria-label="Search"
+              aria-describedby="basic-addon2"
+            />
+          </div>
+        </div>
+
+        <!-- main content  -->
+        <div class="main">
+          <nav
+            class="navbar navbar-expand-lg navbar-light"
+            style="
+              justify-content: space-between !important;
+              margin-bottom: 15px;
+            "
+          >
+            <div class="navbar-Album_title">
+              <a class="navbar-brand" href="#">Billboard Topchart</a>
+              <span>25 Albums</span>
+            </div>
+
+            <div class="my-2 my-lg-0" id="navbarNav" style="">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link main__navlink main__navlinkactive" href="#"
+                    >Ongoing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link main__navlink main__navlinkdisabled"
+                    href="#"
+                    >Favorite</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link main__navlink main__navlinkdisabled"
+                    href="#"
+                    >Saved</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- playlist container -->
+          <div class="playlist">
+            <div class="music">
+              <img src="assets/images/playlist/beach.jpg" alt="" />
+              <h6>Coloring book</h6>
+              <span>Pop King</span>
+            </div>
+            <div class="music">
+              <img src="assets/images/playlist/tower.jpg" alt="" />
+              <h6 style="">Mirage</h6>
+              <span>Else twin</span>
+            </div>
+          </div>
+
+          <!-- songs list  -->
+          <div class="songsList">
+            <h4>Most Popular</h4>
+            <span>80 songs</span>
+            <div class="lsit_items">
+              <div class="item">
+                <h1>01</h1>
+                <a href=""
+                  ><img src="assets/images/playlist/beach.jpg" alt="" />
+                </a>
+                <span style="font-weight: 600">Coloring book</span>
+                <span id="music_title">Pop King</span>
+                <span>3.22</span>
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="item">
+                <h1>02</h1>
+                <a href=""
+                  ><img src="assets/images/playlist/mountain.jpg" alt="" />
+                </a>
+                <span style="font-weight: 600">Mountain</span>
+                <span id="music_title"> Imagine Dragons</span>
+                <span>3.22</span>
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="item">
+                <h1>03</h1>
+                <a href=""
+                  ><img src="assets/images/playlist/map.jpg" alt="" />
+                </a>
+                <span style="font-weight: 600">Map book</span>
+                <span id="music_title">Pop King</span>
+                <span>3.22</span>
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="item">
+                <h1>04</h1>
+                <a href=""
+                  ><img src="assets/images/playlist/tower.jpg" alt="" />
+                </a>
+                <span style="font-weight: 600">black and white</span>
+                <span id="music_title">Pop King</span>
+                <span>3.22</span>
+                <i class="fa fa-heart-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightside">
+        <ul class="nav sidebar">
+          <div class="music_player" style="height: 500px">
+            <h2>Beliver</h2>
+            <span>Imagine Dragons</span>
+            <img id="track_img" src="assets/images/playlist/road.jpg" alt="" />
+            <audio id="music" src="assets/audio/audio1.mp3"></audio>
+            <div class="controler">
+              <i class="fa fa-backward" id="back" aria-hidden="true"></i>
+              <i
+                class="fa fa-play-circle-o"
+                style="font-size: 45px"
+                aria-hidden="true"
+                id="play"
+              ></i>
+              <i class="fa fa-forward" id="forward" aria-hidden="true"></i>
+            </div>
+            <div class="download">
+              <a href="assets/audio/audio1.mp3" download="imaginedDragons"
+                >Download</a
+              >
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
